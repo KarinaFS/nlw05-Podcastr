@@ -1,14 +1,16 @@
-# Podcastr
-
----
+# 🎧 Podcastr
 
 ## 💻 Sobre o projeto
 
 Projeto desenvolvido no evento nlw#05 da [Rocketseat](https://rocketseat.com.br/), onde foi criado uma aplicação do zero de serviço de streaming de podcasts.
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
-ReactJS, NextJS e TypeScript
+ReactJS, NextJS e TypeScript.
+
+---
 
 ## 🚀 Instalação
 
@@ -18,13 +20,15 @@ ReactJS, NextJS e TypeScript
 
 ### Versão de Desenvolvimento
 
-`yarn server`
-`yarn dev`
+* `yarn server`
+* `yarn dev`
 
 ### Versão de Produção
 
-`yarn build`
-`yarn start`
+* `yarn build`
+* `yarn start`
+
+---
 
 ## 🆙 Futuras Implementações
 
