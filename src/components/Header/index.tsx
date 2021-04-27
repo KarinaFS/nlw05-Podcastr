@@ -1,6 +1,8 @@
 import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
 
+import { usePlayer } from '../../contexts/PlayerContext';
+
 import styles from './styles.module.scss';
 
 export function Header() {
@@ -8,8 +10,10 @@ export function Header() {
         locale: ptBR,
     });
 
+    const { toggleDarkMode, isDarkModeActive} = usePlayer(); 
+
     return (
-        <header className={styles.headerContainer}>
+        <header className={isDarkModeActive ? styles.headerDarkMode : styles.headerContainer}>
 
             <img src="/logo.svg" alt="Podcastr" />
 
@@ -17,7 +21,7 @@ export function Header() {
 
             <span>{currentDate}</span>
 
-            <button type="button">
+            <button type="button" onClick={toggleDarkMode}>
                 <img src="/moon.png" alt="Lua"/>
             </button>
         </header>
