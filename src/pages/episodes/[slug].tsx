@@ -29,10 +29,10 @@ type EpisodeProps = {
 }
 
 export default function Episode({ episode }: EpisodeProps) {
-    const { play } = usePlayer();
+    const { play, isDarkModeActive } = usePlayer();
 
     return (
-        <div className={styles.episode}>
+        <div className={isDarkModeActive ? styles.episodeDarkMode : styles.episode}>
             <Head>
                 <title>{episode.title} | Podcastr</title>
             </Head>
