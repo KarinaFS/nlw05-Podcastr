@@ -21,9 +21,7 @@ export function Header() {
 
             <span>{currentDate}</span>
 
-            <button type="button" onClick={toggleDarkMode}>
-                <img src="/moon.png" alt="Lua"/>
-            </button>
+            <button type="button" onClick={toggleDarkMode}>Dark Mode</button>
         </header>
     );
 }

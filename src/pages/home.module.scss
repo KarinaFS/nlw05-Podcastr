@@ -187,7 +187,7 @@
     }
 
     .latestEpisodes {
-        h2 {
+        .darkModeText, h2 {
             color: var(--dark-mode-text);
         }
 
@@ -197,28 +197,14 @@
             border: 1px solid;
         }
 
-        .darkModeText {
-            color: var(--dark-mode-text);
-        }
-
         button {
             background: var(--dark-mode-600);
             border: 1px solid;
-        }
-
-        .episodesDetails {
-            span {
-                color: var(--dark-mode-text);
-            }
         }
     }
 
     .allEpisodes {
-        h2 {
-            color: var(--dark-mode-text);
-        }
-
-        a {
+        h2, a {
             color: var(--dark-mode-text);
         }
 
@@ -227,5 +213,4 @@
             border: 1px solid;
         }
     }
-
 }

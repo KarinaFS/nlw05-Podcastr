@@ -87,9 +87,8 @@
 }
 
 .episodeDarkMode {
-    max-width: 45rem;
+    height: 89%;
     padding: 3rem 2rem;
-    margin: 0 auto;
     background: var(--dark-mode-600);
 
     .thumbnailContainer {
@@ -118,10 +117,9 @@
             }
 
             &:last-child {
-                right: 0;
-                top: 50%;
+                right: 37%;
+                top: 40%;
                 background: var(--green-500);
-                transform: translate(50%, -50%);
             }
 
             &:hover {
@@ -143,7 +141,6 @@
         span {
             display: inline-block;
             font-size: 0.875rem;
-            color: var(--dark-mode-text);
 
             & + span {
                 margin-left: 1rem;

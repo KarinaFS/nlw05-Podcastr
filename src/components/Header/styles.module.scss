@@ -21,18 +21,18 @@
     }
 
     button {
-        border: none;
+        width: 6rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+        border: 0;
         margin-left: 3rem;
-
-        img {
-            width: 2.5rem;
-            height: 2.5rem;
-        }
+        background: var(--purple-500);
+        color: var(--dark-mode-text);
     }
 }
 
 .headerDarkMode {
-    background: var(--dark-mode-800); 
+    background: var(--dark-mode-600); 
     height: 6.5rem;
     display: flex;
     align-items: center;
@@ -52,14 +52,12 @@
     }
 
     button {
-        border: none;
+        width: 6rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+        border: 0;
         margin-left: 3rem;
-
-        img {
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-
-
+        background: var(--purple-500);
+        color: var(--dark-mode-text);
     }
 }
