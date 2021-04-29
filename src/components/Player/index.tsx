@@ -19,6 +19,7 @@ export function Player() {
         isPlaying,
         isLooping,
         isShuffling,
+        isDarkModeActive,
         togglePlay,
         toggleLoop,
         toggleShuffle,
@@ -66,7 +67,7 @@ export function Player() {
     const episode = episodeList[currentEpisodeIndex]
 
     return (
-        <div className={styles.playerContainer}>
+        <div className={isDarkModeActive ? styles.playerContainerDarkMode : styles.playerContainer}>
             <header>
                 <img src="/playing.svg" alt="Tocando agora" />
                 <strong>Tocando agora</strong>

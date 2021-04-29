@@ -28,12 +28,12 @@ type HomeProps = {
 }
 
 export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
-  const { playList } = usePlayer();
+  const { playList, isDarkModeActive } = usePlayer();
 
   const episodeList = [...latestEpisodes, ...allEpisodes];
 
   return (
-    <div className={styles.homepage}>
+    <div className={isDarkModeActive ? styles.homepageDarkMode : styles.homepage}>
       <Head>
         <title>Home | Podcastr</title>
       </Head>
@@ -55,7 +55,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 
                 <div className={styles.episodesDetails}>
                   <Link href={`/episodes/${episode.id}`}>
-                    <a>{episode.title}</a>
+                    <a className={isDarkModeActive ? styles.darkModeText : styles.text}>{episode.title}</a>
                   </Link>
                   <p>{episode.members}</p>
                   <span>{episode.publishedAt}</span>
