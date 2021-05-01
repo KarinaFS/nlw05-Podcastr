@@ -33,5 +33,4 @@ ReactJS, NextJS e TypeScript.
 ## 🆙 Futuras Implementações
 
 * Responsividade
-* Dark Mode
 * Versão PWA
